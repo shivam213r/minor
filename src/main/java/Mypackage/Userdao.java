@@ -25,4 +25,22 @@ public class Userdao {
 	            return false;
 	        }
 	    }
+	   
+	   public static boolean createUser(String username,String email, String password) {
+		   String query = "INSERT INTO users (username,email,password) values (?,?,?)";
+		   try (Connection connection = DBUtil.getConnection();
+		             PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+
+		            preparedStatement.setString(1, username);
+		            preparedStatement.setString(2, email);
+		            preparedStatement.setString(3, password);
+		            
+		            int row = preparedStatement.executeUpdate();
+		  		   return row>0;
+		  		   } catch (SQLException e) {
+			            e.printStackTrace();
+			            System.out.println("hghdh");
+			            return false;
+			        }
+	   }
 }
