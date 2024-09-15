@@ -13,7 +13,7 @@ public class Userdao {
 
 	            preparedStatement.setString(1, email);
 	            preparedStatement.setString(2, password);
-                
+
 	            ResultSet resultSet = preparedStatement.executeQuery();
 
 	            boolean isValid = resultSet.next();
@@ -25,7 +25,7 @@ public class Userdao {
 	            return false;
 	        }
 	    }
-	   
+
 	   public static boolean createUser(String username,String email, String password) {
 		   String query = "INSERT INTO users (username,email,password) values (?,?,?)";
 		   try (Connection connection = DBUtil.getConnection();
@@ -34,7 +34,7 @@ public class Userdao {
 		            preparedStatement.setString(1, username);
 		            preparedStatement.setString(2, email);
 		            preparedStatement.setString(3, password);
-		            
+
 		            int row = preparedStatement.executeUpdate();
 		  		   return row>0;
 		  		   } catch (SQLException e) {

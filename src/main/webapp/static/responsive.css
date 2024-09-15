@@ -1,0 +1,49 @@
+@media (max-width: 600px) {
+	.navbar-brand img {
+			width: 43px !important;
+	}
+	.netflix-padding-left {
+			padding-left: 10px !important;
+	}
+	.netflix-padding-right {
+			padding-right: 10px !important;
+	}
+	.netflix-dropdown-box {
+			display: block !important;
+	}
+	.netflix-nav {
+			display: none !important;
+	}
+	.netflix-hero-video .content .left {
+			margin-left: 10px !important;
+	}
+	.netflix-hero-video .content .left img {
+			margin-top: 90px !important;
+			background: none;
+			width: 250px;
+			height: auto;
+			margin-left: 10px;
+			margin-bottom: 10px;
+	}
+	.netflix-hero-video .content .left button{
+    margin-left: 10px;
+		height: 30px;
+		width: auto;
+		font-size: 12px;
+	}
+	.card{
+		width: 150px;
+	}
+	.card-icon{
+    font-size: 15px;
+    padding: 2px;
+    margin-top: -5px;
+    cursor: pointer;
+	}
+	.slider1{
+    position: absolute;
+    top: 250px;
+		margin-left: 0px;
+    z-index: 500;
+	}
+}

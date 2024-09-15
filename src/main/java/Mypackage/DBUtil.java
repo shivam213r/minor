@@ -6,7 +6,8 @@ import java.sql.SQLException;
 public class DBUtil {
 	 private static final String URL = "jdbc:mysql://localhost:3306/ott_platform";
 	 private static final String USERNAME = "root";
-	 private static final String PASSWORD = "ShivamR@213";
+	 private static final String PASSWORD = "2003";
+//	 private static final String PASSWORD = "ShivamR@213";
     static {
         try {
             // Load the MySQL JDBC driver
